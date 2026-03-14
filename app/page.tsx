@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import { Book } from "@/types/book";
+import Shelf from "@/components/shelf";
 
 export default function Home() {
   const [bookArray, setBookArray] = useState<Book[]>(() => {
@@ -13,7 +14,9 @@ export default function Home() {
 
   return (
     <main>
-      <div>oi</div>
+      <div>
+        <Shelf></Shelf>
+      </div>
     </main>
   );
 }
